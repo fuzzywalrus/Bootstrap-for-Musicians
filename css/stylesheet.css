@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h1 body {
+	font-weight: 300;
+}
+.norm {
+	color: #FFFFFF;
+}
+.norm, body {
+	background-color: #000000;
+}
+
+.norm a:link {
+	color: #FFFFFF;
+}
+.norm  a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.norm  a:hover {
+	color: #EFFCFF;
+}
+.norm .centered {
+	text-align: center;
+}
+.norm  a:active {
+	color: #FF0000;
+	text-decoration: none;
+}
+.norm  .style3 {font-size: 14px}
+.invert {
+	width: 100%;
+
+	background-color: #FFFFFF;
+
+}
+.centered {
+	text-align: center;
+}
+.album {
+	max-width: 800px;
+}
+
+/* Media query, removes default padding so background doesn't show */
+@media (max-width: 767px) {
+
+	body {
+	padding-right: 0px;
+	padding-left: 0px;
+	
+	}
+	.invert .container { 
+		padding-right:20px;
+		padding-left: 20px;
+	}
+	small p {
+		font-size: 10px;
+	}
+	h1 div {
+		font-size: 31px;
+	}
+	.norm {
+		padding-left: 20px; padding-right: 20px;
+	}
+	}
+
+
+
+@media (min-width: 768px) {
+	body {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	h1 {
+		font-size: 68px;
+		line-height: 70px;
+	}
+	h1 div {
+		font-size: 54px;
+		line-height: 70px;
+	}
+	.row {
+		margin-bottom:20px;
+	}
+	
+	
+	
+	
+}
