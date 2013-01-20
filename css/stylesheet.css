@@ -1,3 +1,5 @@
+/* Google Fonts */
+
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -23,12 +25,14 @@
   src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
 }
 
+/* Body styles */
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 h1 body {
 	font-weight: 300;
 }
+/* Norm styles (black background) */
 .norm {
 	color: #FFFFFF;
 }
@@ -53,12 +57,13 @@ h1 body {
 	color: #FF0000;
 	text-decoration: none;
 }
-.norm  .style3 {font-size: 14px}
+.norm  .style3 {
+	font-size: 14px
+}
+/* Invert color */
 .invert {
 	width: 100%;
-
 	background-color: #FFFFFF;
-
 }
 .centered {
 	text-align: center;
@@ -86,11 +91,10 @@ h1 body {
 		font-size: 31px;
 	}
 	.norm {
-		padding-left: 20px; padding-right: 20px;
+		padding-left: 20px; 
+		padding-right: 20px;
 	}
-	}
-
-
+}
 
 @media (min-width: 768px) {
 	body {
@@ -108,8 +112,4 @@ h1 body {
 	.row {
 		margin-bottom:20px;
 	}
-	
-	
-	
-	
 }
