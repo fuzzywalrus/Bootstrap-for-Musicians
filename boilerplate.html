@@ -15,18 +15,28 @@
 <meta property="og:url" content="YOUR URL GOES HERE">
 <meta property="og:site_name" content="NAME OF YOUR WEBSITE"/>
 <meta property="og:type" content="musician"/>
-<!--CDN hosted scripts -->
+<!--CDN hosted scripts. CDN hosted scripts these are for when working off a local copy.  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+<script src="js/jquery.fitvids.min.js"></script>
+
+<!-- use when hosted 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>b scripts 
+-->
+
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-<!--scripts -->
-<script src="/js/jquery.fitvids.min.js"></script>
+
 <link rel="image_src" href="http://www.realmaticalbum.com/realmatic_thumb.jpg" />
-<!-- CSS -->
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/audioplayer.css" /> 
+<!-- CSS  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"/>
+
+
 <!-- credit for audioplayer goes to tympanus.net/codrops/2012/12/04/responsive-touch-friendly-audio-player/ -->
+
+<link rel="stylesheet" href="css/audioplayer.css" /> 
 <link rel="stylesheet" href="css/stylesheet.css" />
+
 <script>
 /* VIEWPORT BUG FIX iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton */
 (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
@@ -49,19 +59,15 @@
 		 <div class="row">
              <div class="span12 centered">
 				  <p>&nbsp;</p>
-				  <p><img src="http://www.realmaticalbum.com/img/realmatic.jpg" width="100%" class="album" itemprop="image"/>  </p>
-				  <h1 itemprop="name"> Realmatic <br><small>(an autobiography)</small><br> <div> by Tyree Harris<div></h1>
+				  <p><img src="img/democover.png" class="album" itemprop="image"/>  </p>
+				  <h1 itemprop="name"> Album Title <br><small>(additional info</small>
+					  <br> 
+					  <div> by Artist<div>
+				  </h1>
 				 
-				  <p>Free download, pass this out to your friends.</p>
-				  <h3>Download Options</h3>
-				  <p class=""><a href="http://www.realmatic.com/REALmatic320AAC.zip">320 kbps AAC (recommended)</a></p>
-				  <p class=""><a href="http://www.realmatic.com/REALmatic320MP3.zip">320 kbps MP3 </a></p>
-				  <p class=""><a href="http://www.realmatic.com/REALmaticAppleLossless.zip">Apple Lossless Codec<br />
-				  </a><span class="">(24 bit, 44.1 Khz, better than CD quality)</span></p>
-				  <h3>Store Options</h3>
-				  <p><a href="https://itunes.apple.com/us/album/realmatic-an-autobiography/id396912832">Also Available on iTunes</a></p>
-				  <p><a href="http://www.amazon.com/Realmatic-An-Autobiography-Explicit/dp/B0046C4OG4/ref=sr_1_1?ie=UTF8&qid=1358235380&sr=8-1&keywords=Realmatic">Amazon.com</a></p>
-				  <p><a href="http://www.cdbaby.com/cd/tyreeharris2">CDBaby.com</a></p>				 
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu mauris metus. Pellentesque ipsum lacus, pulvinar in ultricies eget, dictum vitae quam.</p>
+				
+				  <h3>Subtitle</h3>
 			</div>
 		 </div>
  	</div>
@@ -70,57 +76,16 @@
 		 <div class="row">
 		 	<div  class="span12">
 		 	<div class="centered"> <h1>Listen</h1></div>
-			 	<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>01 </small>The World Was Yours </h3>
-			 <audio preload="auto" controls>
-				<source src="audio/01TheWorldWasYours.mp3" itemprop="url" >
-				<source src="audio/01TheWorldWasYours.ogg" />
+			 	<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>01 </small>Track 1</h3>
+			 <audio preload="none" controls>
+				<source src="http://www.realmaticalbum.com/audio/01TheWorldWasYours.mp3" itemprop="url" >
+				<source src="http://www.realmaticalbum.com/audio/01TheWorldWasYours.ogg" />
 			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>02 </small>I Excel</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/02IExcel.mp3">
-				<source src="audio/02Iexcel.ogg" />
+				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>02 </small>Track 2</h3>
+			 <audio preload="none" controls>
+				<source src="http://www.realmaticalbum.com/audio/02IExcel.mp3"  itemprop="url" >
+				<source src="http://www.realmaticalbum.com/audio/02Iexcel.ogg" />
 			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>03 </small>I'm Famous</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/03ImFamous.mp3" itemprop="url" >
-				<source src="audio/03ImFamous.ogg">
-			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>04 </small>I Rap For</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/04IRapFor....mp3">
-				<source src="audio/04Irapfor.ogg">
-			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>05 </small>Portland State Of Mind</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/05PortlandStateofMind.mp3" itemprop="url" >
-				<source src="audio/05PortlandStateofMind.ogg">
-			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>06 </small>Memory Lane (Heart's Desire)</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/06MemoryLane(HeartsDesire).mp3" itemprop="url" >
-				<source src="audio/06MemoryLaneHeartsDesire.ogg">
-			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>07 </small>Otherside of the Moon</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/07Othersideofthemoon.mp3" itemprop="url" >
-				<source src="audio/07Othersideofthemoon.ogg">
-			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>08 </small>One Love</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/08OneLove.mp3" itemprop="url" >
-				<source src="audio/08OneLove.ogg">
-			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>09 </small>Tyree Harris</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/09TyreeHarris.mp3" itemprop="url" >
-				<source src="audio/09TyreeHarris.ogg">
-			</audio>
-				<h3 itemscope itemtype="http://schema.org/MusicRecording" itemprop="track" ><small>10 </small>On the Road</h3>
-			 <audio preload="auto" controls>
-				<source src="audio/10OntheRoad.mp3" itemprop="url" >
-				<source src="audio/10OntheRoad.ogg">
-			</audio>
-			
 			<script src="js/audioplayer.js"></script>
 			<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
 			<br><br>
@@ -148,45 +113,35 @@
 		 <div class="container ">
 			 <div class="row">
 				 <div  class="span12">
-				 	<div class="centered"> <h1>Remix</h1></div><br>
-				  <h3>Download Options</h3>
-				 <p>
-				Want to do more than just listen? Create your own mix. 
-				 </p>
-				 <p><a href="realmatic-acapella.zip">Acapella Pack (sans instrumentals) 320 Kbps AAC </a> - (Version 1.0)<p>
-				 <p><a href="theworldwasyours-multitrack.zip">The World Was Yours (Multitrack in AIFF)</a> - 44.1 KHz/16 bit </p>
-				 
-				 <h3>Bonus Tracks</h3>
-				 <p>For your listening pleasure...</p>
-				 <p><a href="audio/headhigh.mp3">Head High</a> - production by Justin Kramer </p>
-				 <p><a href="audio/LolomEnlvers.mp3">Lolom Enlvers</a> production by Stewart Villain</p>
-				 <p><a href="audio/iexcelremix.mp3">I Excel (Live Human Nature Remix)</a> - production by Justin Kramer & Greg Gant </p>
-				 <br><br><br>
-				 
-				 
+				 	<div class="centered"> <h1>Optional section</h1></div><br>
+				 		<h3>Download Options</h3>
+						 <p>
+							 Want to do more than just listen? Create your own mix. 
+						 </p>
+						 <p>
+							 Nunc sed lectus sem, sit amet cursus dui. Suspendisse potenti. Nunc vel massa massa, in egestas sem. Quisque pretium blandit nisl eget interdum. Curabitur imperdiet, magna pellentesque volutpat pretium, nisl urna molestie dolor, in imperdiet velit massa sed diam. Sed aliquam, quam in condimentum tempus, velit turpis ornare metus, nec elementum augue neque et orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam dapibus sem id magna tristique et faucibus ante fermentum. Sed vitae tellus id diam condimentum laoreet ac et tellus. Phasellus ligula tellus, pretium commodo tincidunt in, rutrum eu libero.
+						 </p>
+						 <p>
+							 Sed tempus nisl ut eros fringilla adipiscing. Donec vulputate turpis id massa sagittis quis pharetra enim porta. Morbi sollicitudin enim a velit tristique vitae mollis augue tristique. Ut magna urna, porta nec auctor vel, accumsan non velit. Maecenas suscipit congue odio, non ultrices dolor faucibus id. Etiam sit amet nunc nisi. Maecenas sed est justo. Nam euismod magna sed turpis iaculis ut lobortis sem condimentum. Nullam cursus nulla eget ligula vestibulum egestas. Nullam auctor commodo felis, sit amet dapibus turpis lacinia vitae. Nunc sed congue odio. Phasellus non tellus ut mauris mollis auctor nec vitae arcu.
+						 </p>
+						 <br><br><br>
+					</div>
 				</div>
-		 </div>
-	</div>
-</div>
+			</div>
+		</div>
 		 <div class="container norm">
 			 <div class="row">
 				 <div  class="span12">
 				 	<div class="centered"> <h1>About</h1></div><br>
-				 
-				 
-				 <div class="outro"><p>REALmatic is dedicated to and inspired by  Nas' first album, Illmatic. It is an autobiography of my relationship to music, journalism, education and  self. While firmly rooted in the ethos that made Illmatic, it stands a bridge between the hip hop that inspired me to today's soundscape. </p>
-				 <p>- Tyree Harris</p></div>
-				 <br><br><br>
-				 <small>
-		 		<p><strong>Contact:</strong> <a href="mailto:tyree@realmaticalbum.com">tyree@realmaticalbum.com</a><br>
-		 		<strong>Credits:</strong>  <br>
-		 		<strong>Vocals:</strong> Tyree Harris  <br>
-		 		<strong>Production:</strong> Justin Kramer (Juicebox Jackson), Greg Gant, Stewart Villain, Otto, MIG.<br>
-		 		<strong>Recording & Mixing:</strong> Greg Gant w/ Assistance of Tyree Harris <br>
-		 		<strong>Tyree Harris - Special Thanks:</strong> Zachary Taylor, a house full of dysfunctional roommates that changed my life, Parkrose High School, Melech, Casey Parks, Antione Simmons, Misha Waller, Reggie Johnson, Jordan Heath, James Dos Santos, the Oregon Daily Emerald, the Bronco Blaze, Nerissa Ediza, Maria Fuhrmann, AVG and everyone else who guided me through trying and rewarding times in life, demanding me to remain both proud and humble. This album is as much yours as it is mine.<br>
-		 		<strong>Greg Gant - Special Thanks:</strong> Zachary Taylor, David Remington, every soul musician <del>stole</del> sampled, the 2008 recession, unemployment benefits, re-employment and insomnia. <br>
-		 		<strong>Site Design:</strong> <a href="http://www.greggant.com">Greg Gant</p>
-		 		</small>
+						 <div class="outro"><p> outro statement enenatis quis tincidunt tincidunt, consectetur non ipsum. Mauris scelerisque, lorem vitae malesuada congue, </p>
+						 <p>- Artist/Band</p></div>
+						 <br><br><br>
+					 <small>
+				 		<p><strong>Contact:</strong> <a href="mailto:YOUREMAIL@SITENAME.COM">youremail@sitename.com</a><br>
+				 		<strong>Credits:</strong>  <br>
+				 		<strong>Item 1::</strong> Sed porta, lorem semper ornare convallis, metus mi laoreet nulla, vel convallis erat nulla ut ligula.<br>
+				 		<strong>Item 2:</strong> Donec tincidunt vulputate ante, eu venenatis leo feugiat a. Quisque malesuada, tellus at accumsan venenatis, tortor arcu euismod tellus.<br>
+		 			</small>
 				 </div>
 			 </div>
 		 </div>
